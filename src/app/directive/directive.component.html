@@ -1,0 +1,36 @@
+<div class="container">
+    <h2> using ngFor</h2>
+    <table class="table table-striped" [attr.border]="bdr" height="100" width="300">
+        <thead>
+            <tr>
+                <td [attr.colspan]="cols"> data</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>name</td>
+                <td>price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>using ngIf</h2>
+<input type="radio" name="rdio1" (click)="changevalue(true)">True
+<input type="radio" name="rdio1" (click)="changevalue(false)">false
+<div *ngIf="isvalid">This is valid data</div>
+<div *ngIf="!isvalid">This is not valid data</div>
+
+<h2>using ngSwitch</h2>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">you pick red</div>
+    <div *ngSwitchCase="'yrllow'">you pick yellow</div>
+    <div *ngSwitchCase="'green'">you pick green</div>
+    <div *ngSwitchCase="'orange'">you pick orange</div>
+</div>

@@ -1,0 +1,28 @@
+<h1>HTTPCLIENT</h1>
+<h3>get method</h3> to see above contact name
+<ul>
+    <li *ngFor= "let contact of contactList">
+        {{contact.id}}
+{{contact.name}}{{contact.lastname}}
+    </li>
+</ul>
+<h3>post method</h3>
+<div *ngIf=msgTrue>created successfully</div>
+<form #addnewcontactForm="ngForm" (submit)="addnewcontact(addnewcontactForm)">
+    <div class="form-group">
+
+        <input type="text" class="form-control" name="id" placeholder="enter id"  required ngModel><br>
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" name="name" placeholder="enter name" required ngModel><br>
+    </div>
+    <div class="form-group">
+
+        <input type="text" class="form-control" name="lastname" placeholder="enter last name" required ngModel><br>
+    </div>
+    <button class="form-control"[disabled]="!addnewcontactForm.valid">submit</button>
+</form>
+<h3>put/delete method</h3>
+<button (click)="updateContact(2);">update</button>
+<button (click)="deleteContact(1)">delete</button>

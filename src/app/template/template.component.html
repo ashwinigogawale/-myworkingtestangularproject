@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+<div class="container">
+    <div class="row">
+        <form #regForm='ngForm' (ngSubmit)="onsubmit(regForm)">
+            <div class="form-group" >
+                <input type="text" class="form-control" placeholder="enter first name" name="fname" ngModel>
+            </div>
+            <div class="form-group" >
+                <input type="text" class="form-control" placeholder="enter last name" name="lname" ngModel>
+            </div>
+            <div class="form-group" >
+                <input type="text" class="form-control" placeholder="enter email" name="email" ngModel>
+            </div><br>
+            <div class="align-center" >
+                <button type="submit" class="btn btn-primary"  id="submit">submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<h5> < reactive form done by other example formgropu or form control using.></h5>
+<h1>services</h1>
+<h4>List of contats</h4>
+<ul>
+    <li *ngFor="let contact of contactList">
+        {{contact.name}}
+
+    </li>
+</ul>
+<h1>@input<h4>(this show console)</h4> @output decorator</h1>
+<button (click)="senddata()">send</button>

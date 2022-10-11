@@ -1,0 +1,65 @@
+<h1>{{title}}</h1>
+<!-- to dispaly 2 word with space used +''+,and without space only use + -->
+<h3>{{firstname+' '+lastname}}</h3>
+<h4>{{a+b}}</h4>
+
+
+<!-- to binding without property used innerHTNL and given ts file value -->
+<h1 [innerHTML]='title1'></h1>
+First Name: <span [innerHTML]='firstname'></span>
+<!-- to binding with property used src property and in img used "''" this qaotes-->
+<img [src]="'https://angular.io/assets/images/logos/angular/logo-nav@2x.png'" alt="" height="50px" width="100px">
+<!-- to binding with property used property and given ts file value -->
+<input [type]="type" [value]="lastname">
+
+<h1>{{title2}}</h1>
+<!-- to binding with attribute used tag attribute [attr.border]used attr.attribute name and = given ts file value -->
+<table [attr.border]="bdr" height="100" width="200">
+   <tr>
+    <td [attr.colspan]="cols"> student data</td></tr>
+    <tr>
+        <td>ID</td>
+    <td>name</td>
+    <td>class</td>
+    </tr>
+        <tr>
+            <td> 1</td>
+        <td>ashwini</td>
+        <td>10th</td>
+        </tr>
+</table>
+
+<h1>Event binding</h1>
+<!-- to binding with Event used any movent eg.click,mouseover and given ts file function -->
+<button (click)="onclick()">click me</button>&nbsp;
+<button (click)="show()">show</button>
+
+<h1>Two way binding</h1>
+<!-- without ngmodel to show data   in two way binding used property binding of data value and event binding of that value to show value directly  data=$event.target.value
+this value used to show updated value -->
+Enter youe name:<input type="text" [value]="data" (input)="data=$event.target.value"><br>
+<!-- used interpolution to show value-->
+your name:{{data}}<br>
+<!-- used ng model to direclty show data-->
+<input [(ngModel)]="data1"><br>
+value is:{{data1}}
+
+<!-- style binding in html or ts file used this [style.cssproperty]="ts filename"-->
+<h2 [style.color]="color">Style binding</h2>
+
+<!--class bindingwith class name and ts file value -->
+<h2 [class]="succesclass">class binding</h2>
+<h2 [class]="error">class binding</h2>
+<h2>pipes</h2>
+<h3>inbuilt pipe</h3>
+<h4>{{firstname |lowercase}}</h4>
+<h4>{{firstname |uppercase}}</h4>
+<h4>{{firstname |titlecase}}</h4>
+<h4>{{firstname |slice:2:5}}</h4>
+<h4>{{25 |percent}}</h4>
+<h4>{{3 |currency}}</h4>
+<h4>{{date}}</h4>
+<h4>{{date|date:'short'}}</h4>
+<h4>{{date|date:'shortTime'}}</h4>
+<h3>custom pipe</h3>
+<p>also ng g pipe pipename to create custom pipe </p>

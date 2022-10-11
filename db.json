@@ -1,0 +1,54 @@
+{
+  "contacts": [
+    {
+      "id": 6,
+      "name": "ashwini",
+      "lastname": "gogawale"
+    },
+    {
+      "id": "2",
+      "name": "sona",
+      "lastname": "go"
+    },
+    {
+      "id": "8",
+      "name": "ash",
+      "lastname": "go"
+    },
+    {
+      "id": "9",
+      "name": "m",
+      "lastname": "k"
+    },
+    {
+      "id": "3",
+      "name": "mayur",
+      "lastname": "kad"
+    },
+    {
+      "id": "4",
+      "name": "lalita",
+      "lastname": "kad"
+    },
+    {
+      "id": "7",
+      "name": "ashwini",
+      "lastname": "kad"
+    },
+    {
+      "id": "11",
+      "name": "rani",
+      "lastname": "te"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
