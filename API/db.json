@@ -7,16 +7,32 @@
         {
           "cols": 5,
           "rows": 5,
+          "x": 6,
           "y": 0,
+          "name": "Doughnut Chart",
+          "component": "Doughnut Chart"
+        },
+        {
+          "cols": 5,
+          "rows": 5,
           "x": 0,
+          "y": 0,
           "name": "Line Chart",
           "component": "Line Chart"
         },
         {
           "cols": 5,
           "rows": 5,
+          "x": 0,
+          "y": 5,
+          "name": "Radar Chart",
+          "component": "Radar Chart"
+        },
+        {
+          "cols": 5,
+          "rows": 5,
           "x": 5,
-          "y": 0,
+          "y": 5,
           "name": "Doughnut Chart",
           "component": "Doughnut Chart"
         }
